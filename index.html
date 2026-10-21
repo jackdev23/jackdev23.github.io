@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title id="page-title">Luca Facchinetti — Firmware Engineer &amp; Embedded Systems Developer</title>
+  <meta name="description" content="Luca Facchinetti - Ingegnere Firmware con oltre 25 anni di esperienza in firmware bare-metal STM32, PIC/dsPIC, progettazione PCB e consulenza embedded." />
+  <meta name="author" content="Luca Facchinetti" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://jackdev23.github.io/" />
+
+  <!-- Multilingual SEO -->
+  <link rel="alternate" hreflang="it" href="https://jackdev23.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://jackdev23.github.io/?lang=en" />
+  <link rel="alternate" hreflang="es" href="https://jackdev23.github.io/?lang=es" />
+  <link rel="alternate" hreflang="x-default" href="https://jackdev23.github.io/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://jackdev23.github.io/" />
+  <meta property="og:title" content="Luca Facchinetti — Firmware Engineer &amp; Embedded Systems Developer" />
+  <meta property="og:description" content="Oltre 25 anni di esperienza in firmware bare-metal, progettazione hardware embedded e consulenza tecnica. Specializzato in STM32, PIC, dsPIC, Modbus." />
+  <meta property="og:site_name" content="Luca Facchinetti - Firmware Engineer Portfolio" />
+  <meta property="og:image" content="https://jackdev23.github.io/assets/og-image.jpg" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:image:alt" content="STM32 Panadapter SDR - software defined radio hardware project for amateur radio frequency display" />
+  <meta property="og:image:type" content="image/jpeg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luca Facchinetti — Firmware Engineer &amp; Embedded Systems Developer" />
+  <meta name="twitter:description" content="Oltre 25 anni di esperienza in firmware bare-metal, progettazione hardware embedded e consulenza tecnica." />
+  <meta name="twitter:image" content="https://jackdev23.github.io/assets/og-image.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Favicon & Theme -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="theme-color" content="#15151D" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luca Facchinetti",
+    "alternateName": ["Jack Dev23"],
+    "@id": "https://jackdev23.github.io/#person",
+    "url": "https://jackdev23.github.io/",
+    "email": "jackdev23@gmail.com",
+    "jobTitle": "Firmware Engineer & Embedded Systems Developer",
+    "description": "Bare-metal firmware engineer and embedded systems developer with 25+ years of experience in STM32, PIC/dsPIC microcontrollers, PCB design, and hardware consulting.",
+    "nationality": "Italian",
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IT"
+      }
+    },
+    "knowsAbout": ["Firmware Development", "Embedded Systems", "STM32", "PIC Microcontroller", "dsPIC33", "Bare Metal Programming", "PCB Design", "Modbus Protocol", "AI-Assisted Firmware Development"],
+    "sameAs": [
+      "https://github.com/jackdev23",
+      "https://www.facebook.com/iw2ndhDSP/",
+      "https://jackdev23.wixsite.com/iw2ndh-dsp",
+      "https://jackdev23.wixsite.com/panadapter"
+    ],
+    "knowsLanguage": [
+      {"@type":"Language","name":"Italian","nativeLanguage":true},
+      {"@type":"Language","name":"English"},
+      {"@type":"Language","name":"Spanish"}
+    ],
+    "award": "Amateur Radio License (Callsign: IW2NDH) since 1986"
+  }
+  </script>
+
+  <!-- Local SEO - ProfessionalService Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Luca Facchinetti - Firmware Engineering Services",
+    "description": "Professional firmware engineering and embedded systems consulting services. Specializing in STM32, PIC/dsPIC microcontrollers, bare-metal development, PCB design, and hardware optimization for industrial applications.",
+    "url": "https://jackdev23.github.io/",
+    "email": "jackdev23@gmail.com",
+    "priceRange": "€€-€€€",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IT"
+    },
+    "areaServed": [
+      {
+        "@type": "Place",
+        "name": "Lombardy Region"
+      },
+      {
+        "@type": "State",
+        "name": "Bergamo Province"
+      },
+      {
+        "@type": "City",
+        "name": "Milan Metropolitan Area"
+      }
+    ],
+    "serviceType": [
+      "Firmware Development Consulting",
+      "Embedded Systems Engineering",
+      "PCB Design Services",
+      "Hardware Optimization",
+      "Technical Training (STM32, PIC/dsPIC)"
+    ],
+    "knowsAbout": [
+      "Firmware Engineering",
+      "Embedded Systems",
+      "STM32 Microcontrollers",
+      "PIC/dsPIC Development",
+      "Bare Metal Programming",
+      "PCB Design (EasyEDA)",
+      "Modbus Protocol Implementation",
+      "Industrial Automation"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Engineering Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Firmware Development Consulting"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Embedded Systems Design & Prototyping"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "PCB Layout & Hardware Optimization"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Projects Schema: links this site to the Wix product/project pages -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Project",
+        "name": "Blue DSP \u2014 Noise-Canceling DSP for Ham Radio (iw2ndh-dsp)",
+        "description": "Noise-canceling DSP kit for amateur radio (Icom, Yaesu, Kenwood, Drake) with SSB squelch, auto-notch and 5 digital filters, built on the Microchip dsPIC33.",
+        "url": "https://jackdev23.wixsite.com/iw2ndh-dsp",
+        "image": "https://jackdev23.github.io/assets/dsp2.avif",
+        "keywords": "noise canceling DSP, ham radio, FT-817, Icom, Yaesu, Kenwood, dsPIC33, SSB squelch, auto notch",
+        "codeRepository": "https://github.com/jackdev23/Blue_DSP",
+        "creator": { "@id": "https://jackdev23.github.io/#person" }
+      },
+      {
+        "@type": "Project",
+        "name": "STM32 Panadapter SDR for Amateur Radio",
+        "description": "STM32-based software-defined radio panadapter displaying the receive spectrum, built for amateur radio use.",
+        "url": "https://jackdev23.wixsite.com/panadapter",
+        "image": "https://jackdev23.github.io/assets/bandscope.avif",
+        "keywords": "panadapter, SDR, STM32, amateur radio, spectrum display",
+        "creator": { "@id": "https://jackdev23.github.io/#person" }
+      },
+      {
+        "@type": "Project",
+        "name": "Encry \u2014 AES-256 Voice Encryption Kit",
+        "description": "Hardware AES-256 voice encryption kit for radios and phones: no apps, no cloud, no stored recordings.",
+        "url": "http://encrypt-kit.surge.sh/",
+        "image": "https://jackdev23.github.io/assets/encry.jpg",
+        "keywords": "AES-256, voice encryption, radio, hardware kit",
+        "creator": { "@id": "https://jackdev23.github.io/#person" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="lang-it">
+
+  <a class="skip-link" href="#main"><span data-lang="en">Skip to content</span><span data-lang="it">Vai al contenuto</span><span data-lang="es">Ir al contenido</span></a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="#" class="nav-logo">
+        <img class="nav-mark" src="assets/mark.svg" alt="" width="28" height="28">
+        Luca Facchinetti
+      </a>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang-btn="it" id="btn-it" aria-pressed="true">IT</button>
+          <button class="lang-btn" data-lang-btn="en" id="btn-en" aria-pressed="false">EN</button>
+          <button class="lang-btn" data-lang-btn="es" id="btn-es" aria-pressed="false">ES</button>
+        </div>
+        <div class="nav-links">
+          <a href="#experience"><span data-lang="en">Experience</span><span data-lang="it">Esperienza</span><span data-lang="es">Experiencia</span></a>
+          <a href="#skills"><span data-lang="en">Skills</span><span data-lang="it">Competenze</span><span data-lang="es">Habilidades</span></a>
+          <a href="#education"><span data-lang="en">Education</span><span data-lang="it">Formazione</span><span data-lang="es">Educación</span></a>
+          <a href="#projects"><span data-lang="en">Projects</span><span data-lang="it">Progetti</span><span data-lang="es">Proyectos</span></a>
+          <a href="#hire" class="nav-cta"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#factory"/></svg> <span data-lang="en">Hire Me</span><span data-lang="it">Assumimi</span><span data-lang="es">Contrátame</span></a>
+          <a href="#fpga-clc"><span data-lang="en">FPGA vs CLC</span><span data-lang="it">FPGA vs CLC</span><span data-lang="es">FPGA vs CLC</span></a>
+          <a href="#embedded-ai"><span data-lang="en">Embedded AI</span><span data-lang="it">Embedded AI</span><span data-lang="es">Embedded AI</span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-inner fade-up">
+      <img class="hero-mark" src="assets/mark.svg" alt="" width="84" height="84">
+      <h1><span data-lang="en">Firmware Engineer &amp; <span class="accent">Embedded Systems</span> Developer</span><span data-lang="it">Ingegnere Firmware &amp; Sviluppatore di <span class="accent">Sistemi Embedded</span></span><span data-lang="es">Ingeniero de Firmware y Desarrollador de <span class="accent">Sistemas Embebidos</span></span></h1>
+      <p><span data-lang="en">Bare-metal firmware, hardware design, and embedded systems since 2001. Building real products from schematic to silicon.</span><span data-lang="it">Firmware bare-metal, progettazione hardware e sistemi embedded dal 2001. Costruisco prodotti reali dallo schema al silicio.</span><span data-lang="es">Firmware bare-metal, diseño de hardware y sistemas embebidos desde 2001. Construyendo productos reales desde el esquema hasta el silicio.</span></p>
+      <div class="hero-buttons">
+        <a href="#experience" class="btn btn-primary"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg> <span data-lang="en">View Experience</span><span data-lang="it">Vedi Esperienza</span><span data-lang="es">Ver Experiencia</span></a>
+        <a href="#hire" class="btn btn-primary"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#factory"/></svg> <span data-lang="en">Hire Me</span><span data-lang="it">Assumimi</span><span data-lang="es">Contrátame</span></a>
+        <a href="#projects" class="btn btn-outline"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#file-text"/></svg> <span data-lang="en">See Projects</span><span data-lang="it">Vedi Progetti</span><span data-lang="es">Ver Proyectos</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section" aria-label="Work experience">
+    <div class="container">
+      <h2 class="section-title fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#file-text"/></svg> <span data-lang="en">Work Experience</span><span data-lang="it">Esperienza Lavorativa</span><span data-lang="es">Experiencia Laboral</span></h2>
+      <p class="section-subtitle fade-up"><span data-lang="en">A career spanning firmware, hardware design, iOS development, and technical consulting.</span><span data-lang="it">Una carriera che spazia tra firmware, progettazione hardware, sviluppo iOS e consulenza tecnica.</span><span data-lang="es">Una carrera que abarca firmware, diseño de hardware, desarrollo iOS y consultoría técnica.</span></p>
+
+      <div class="exp-grid">
+        <!-- Firmware Engineer -->
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#lightbulb"/></svg> <span data-lang="en">Firmware Engineer</span><span data-lang="it">Ingegnere Firmware</span><span data-lang="es">Ingeniero de Firmware</span> &#8212; Microchip</div>
+              <div class="exp-company">Oesum srl (UTP Vision) &#8212; Albano Sant&#39;Alessandro, BG</div>
+            </div>
+            <div class="exp-date"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg> Sep 2023 &#8211; Sep 2025</div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">Hardware design: board functionality definition, component selection. Firmware development on PIC24/PIC18 Microchip microcontrollers for web server UI and Modbus protocol. Bare-metal implementation of channel synchronization.</span><span data-lang="it">Progettazione hardware: definizione funzionalità scheda, selezione componenti. Sviluppo firmware su microcontrollori PIC24/PIC18 Microchip per interfaccia web server e protocollo Modbus. Implementazione bare-metal della sincronizzazione dei canali.</span><span data-lang="es">Diseño de hardware: definición de funcionalidad de placa, selección de componentes. Desarrollo de firmware en microcontroladores PIC24/PIC18 Microchip para interfaz de servidor web y protocolo Modbus. Implementación bare-metal de la sincronización de canales.</span></p>
+          <div class="tech-tags">
+            <span class="tag">C</span><span class="tag">PIC24</span><span class="tag">PIC18</span><span class="tag">HTML</span><span class="tag">Modbus</span><span class="tag">Saleae</span><span class="tag">BusPirate</span><span class="tag"><span data-lang="en">Oscilloscope</span><span data-lang="it">Oscilloscopio</span><span data-lang="es">Osciloscopio</span></span>
+          </div>
+        </div>
+
+        <!-- Firmware Developer -->
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#lightbulb"/></svg> <span data-lang="en">Firmware Developer</span><span data-lang="it">Sviluppatore Firmware</span><span data-lang="es">Desarrollador de Firmware</span></div>
+              <div class="exp-company"><span data-lang="en">Embedded Systems</span><span data-lang="it">Sistemi Embedded</span><span data-lang="es">Sistemas Embebidos</span> &#8212; <span data-lang="en">4 Years</span><span data-lang="it">4 Anni</span><span data-lang="es">4 Años</span></div>
+            </div>
+            <div class="exp-date"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg> <span data-lang="en">Duration: 4 years</span><span data-lang="it">Durata: 4 anni</span><span data-lang="es">Duración: 4 años</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">Designed DSP boards, scalar network analyzers, and spectrum analyzers. Full hardware design lifecycle: schematic capture, PCB layout, Gerber/drill/BOM production files. Firmware on dsPIC33 and STM32 in bare-metal.</span><span data-lang="it">Progettazione schede DSP, analizzatori di rete scalari e analizzatori di spettro. Ciclo completo di progettazione hardware: cattura schematiche, layout PCB, file di produzione Gerber/drill/BOM. Firmware su dsPIC33 e STM32 in bare-metal.</span><span data-lang="es">Diseño de tarjetas DSP, analizadores de red escalares y analizadores de espectro. Ciclo completo de diseño de hardware: captura de esquemas, layout PCB, archivos de producción Gerber/drill/BOM. Firmware en dsPIC33 y STM32 en bare-metal.</span></p>
+          <div class="tech-tags">
+            <span class="tag">C</span><span class="tag">dsPIC33</span><span class="tag">STM32</span><span class="tag"><span data-lang="en">Bare Metal</span><span data-lang="it">Bare Metal</span><span data-lang="es">Bare Metal</span></span><span class="tag">Linux</span><span class="tag">VSCode</span><span class="tag">Eclipse</span><span class="tag">EasyEDA</span><span class="tag">LTSpice</span>
+          </div>
+        </div>
+
+        <!-- iOS Developer -->
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#newspaper"/></svg> <span data-lang="en">iOS Developer</span><span data-lang="it">Sviluppatore iOS</span><span data-lang="es">Desarrollador iOS</span></div>
+              <div class="exp-company"><span data-lang="en">Apple App Store</span><span data-lang="it">Apple App Store</span><span data-lang="es">Apple App Store</span> &#8212; 18 Apps Published</div>
+            </div>
+            <div class="exp-date"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg> Jan 2009 &#8211; Dec 2012</div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">Developed and published multiple iOS applications on the Apple App Store throughout the early iPhone era.</span><span data-lang="it">Sviluppato e pubblicato diverse applicazioni iOS sull'Apple App Store durante i primi anni dell'era iPhone.</span><span data-lang="es">Desarrollé y publiqué varias aplicaciones iOS en la Apple App Store durante los primeros años de la era iPhone.</span></p>
+          <div class="tech-tags"><span class="tag">Objective-C</span><span class="tag"><span data-lang="en">iOS SDK</span><span data-lang="it">iOS SDK</span><span data-lang="es">iOS SDK</span></span><span class="tag">Xcode</span></div>
+        </div>
+
+        <!-- Consultant -->
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#lightbulb"/></svg> <span data-lang="en">Consultant</span><span data-lang="it">Consulente</span><span data-lang="es">Consultor</span> &#8212; <span data-lang="en">Computer Science</span><span data-lang="it">Informatica</span><span data-lang="es">Informática</span></div>
+            </div>
+            <div class="exp-date"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg> Jan 2004 &#8211; Dec 2009</div>
+          </div>
+        </div>
+
+        <!-- Sales Manager -->
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#factory"/></svg> <span data-lang="en">Sales Manager</span><span data-lang="it">Responsabile Vendite</span><span data-lang="es">Gerente de Ventas</span></div>
+              <div class="exp-company">A-Team srl &#8212; Castelli Calepio, BG / ICE srl &#8212; Velate, MI</div>
+            </div>
+            <div class="exp-date"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg> 2001 &#8211; 2003</div>
+          </div>
+        </div>
+
+        <!-- Export Sales Manager -->
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg> <span data-lang="en">Export Sales Manager</span><span data-lang="it">Responsabile Vendite Export</span><span data-lang="es">Gerente de Ventas de Exportación</span> &#8212; <span data-lang="en">Hardware Industry</span><span data-lang="it">Industria Hardware</span><span data-lang="es">Industria del Hardware</span></div>
+              <div class="exp-company">Italpresse / CMS Tekna</div>
+            </div>
+            <div class="exp-date"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg> 1997 &#8211; 2001</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-gray" aria-label="Technical skills">
+    <div class="container">
+      <h2 class="section-title fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#hammer"/></svg> <span data-lang="en">Technical Skills</span><span data-lang="it">Competenze Tecniche</span><span data-lang="es">Habilidades Técnicas</span></h2>
+      <p class="section-subtitle fade-up"><span data-lang="en">Languages, platforms, and tools I work with daily.</span><span data-lang="it">Linguaggi, piattaforme e strumenti con cui lavoro quotidianamente.</span><span data-lang="es">Lenguajes, plataformas y herramientas con las que trabajo a diario.</span></p>
+
+      <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <h3><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#laptop"/></svg> <span data-lang="en">Programming Languages</span><span data-lang="it">Linguaggi di Programmazione</span><span data-lang="es">Lenguajes de Programación</span></h3>
+          <ul class="skill-list">
+            <li>C Embedded (<span data-lang="en">Expert</span><span data-lang="it">Esperto</span><span data-lang="es">Experto</span>)</li>
+            <li>Objective-C</li>
+            <li>C++</li>
+            <li>VB 6.0</li>
+            <li>Pascal</li>
+            <li><span data-lang="en">UNIX Shell Scripts</span><span data-lang="it">Script Shell UNIX</span><span data-lang="es">Scripts de Shell UNIX</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card fade-up">
+          <h3><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#plug"/></svg> <span data-lang="en">Microcontrollers &amp; Platforms</span><span data-lang="it">Microcontrollori e Piattaforme</span><span data-lang="es">Microcontroladores y Plataformas</span></h3>
+          <ul class="skill-list">
+            <li>Microchip dsPIC33</li>
+            <li>ST STM32</li>
+            <li>AVR</li>
+            <li>PIC24 / PIC18</li>
+            <li><span data-lang="en">Bare Metal</span><span data-lang="it">Bare Metal</span><span data-lang="es">Bare Metal</span></li>
+            <li>Linux</li>
+            <li>Windows</li>
+            <li>macOS</li>
+          </ul>
+        </div>
+
+        <div class="skill-card fade-up">
+          <h3><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#tool-case"/></svg> <span data-lang="en">Tools &amp; Instruments</span><span data-lang="it">Strumenti e Strumentazione</span><span data-lang="es">Herramientas e Instrumentos</span></h3>
+          <ul class="skill-list">
+            <li>VSCode</li><li>Eclipse</li><li>EasyEDA</li><li>LTSpice</li>
+            <li><span data-lang="en">Saleae Logic Analyzer</span><span data-lang="it">Analizzatore Logico Saleae</span><span data-lang="es">Analizador Lógico Saleae</span></li>
+            <li>BusPirate</li><li><span data-lang="en">Oscilloscope</span><span data-lang="it">Oscilloscopio</span><span data-lang="es">Osciloscopio</span></li><li><span data-lang="en">Soldering</span><span data-lang="it">Saldataura</span><span data-lang="es">Soldadura</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card fade-up">
+          <h3><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#flag"/></svg> <span data-lang="en">Languages Spoken</span><span data-lang="it">Lingue Parlate</span><span data-lang="es">Idiomas Hablados</span></h3>
+          <ul class="skill-list">
+            <li><span data-lang="en">Italian (Native)</span><span data-lang="it">Italiano (Madrelingua)</span><span data-lang="es">Italiano (Nativo)</span></li>
+            <li><span data-lang="en">English (Good)</span><span data-lang="it">Inglese (Buono)</span><span data-lang="es">Inglés (Bueno)</span></li>
+            <li><span data-lang="en">Spanish (Good)</span><span data-lang="it">Spagnolo (Buono)</span><span data-lang="es">Español (Bueno)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section" aria-label="Education and certifications">
+    <div class="container">
+      <h2 class="section-title fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#graduation-cap"/></svg> <span data-lang="en">Education</span><span data-lang="it">Formazione</span><span data-lang="es">Educación</span></h2>
+      <p class="section-subtitle fade-up"><span data-lang="en">Academic background in computer science and electronics.</span><span data-lang="it">Percorso accademico in informatica ed elettronica.</span><span data-lang="es">Formación académica en informática y electrónica.</span></p>
+
+      <div class="edu-grid">
+        <div class="edu-card fade-up">
+          <svg class="ic edu-icon" aria-hidden="true"><use href="assets/icons.svg#graduation-cap"/></svg>
+          <div>
+            <div class="edu-degree"><span data-lang="en">Laurea in Informatica (B.S. Computer Science)</span><span data-lang="it">Laurea in Informatica</span><span data-lang="es">Licenciatura en Informática</span></div>
+            <div class="edu-detail"><span data-lang="en">Graduated: 15 July 1996</span><span data-lang="it">Laurea: 15 Luglio 1996</span><span data-lang="es">Graduado: 15 de julio de 1996</span></div>
+          </div>
+        </div>
+
+        <div class="edu-card fade-up">
+          <svg class="ic edu-icon" aria-hidden="true"><use href="assets/icons.svg#laptop"/></svg>
+          <div>
+            <div class="edu-degree"><span data-lang="en">Diploma in Industrial Electronics</span><span data-lang="it">Diploma per Perito Elettronico</span><span data-lang="es">Diploma en Electrónica Industrial</span></div>
+            <div class="edu-detail"><span data-lang="en">Graduated: 21 July 1986</span><span data-lang="it">Diploma: 21 Luglio 1986</span><span data-lang="es">Diplomado: 21 de julio de 1986</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-gray" aria-label="Projects and portfolio">
+    <div class="container">
+      <h2 class="section-title fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#lightbulb"/></svg> <span data-lang="en">Projects</span><span data-lang="it">Progetti</span><span data-lang="es">Proyectos</span></h2>
+      <p class="section-subtitle fade-up"><span data-lang="en">Personal embedded systems projects built from scratch.</span><span data-lang="it">Progetti personali di sistemi embedded realizzati da zero.</span><span data-lang="es">Proyectos personales de sistemas embebidos desarrollados desde cero.</span></p>
+
+      <div class="project-grid">
+        <div class="project-card fade-up">
+          <img src="assets/bandscope.avif" alt="STM32 Panadapter SDR - software defined radio hardware project showing frequency spectrum display on microcontroller board" width="600" height="400" loading="lazy" decoding="async" class="project-image" />
+          <div class="project-body">
+            <div class="project-name">STM32 Panadapter</div>
+            <p class="project-desc"><span data-lang="en">An STM32-based software-defined radio panadapter for amateur radio use.</span><span data-lang="it">Un panadapter SDR basato su STM32 per l'uso nella radioamatoriale.</span><span data-lang="es">Un panadapter SDR basado en STM32 para uso en radioafición.</span></p>
+            <a href="https://jackdev23.wixsite.com/panadapter" target="_blank" rel="noopener" class="project-link">&#8599; <span data-lang="en">STM32 Panadapter SDR for Amateur Radio</span><span data-lang="it">Panadapter SDR STM32 per radioamatori</span><span data-lang="es">Panadapter SDR STM32 para radioafición</span> &#8594;</a>
+            <br /><small class="repo-note"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#git-branch"/></svg> <a href="https://github.com/jackdev23" target="_blank" rel="noopener">GitHub Profile</a></small>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <img src="assets/dsp2.avif" alt="DSP-based audio processing project using dsPIC33 microcontroller for signal processing and filtering applications" width="600" height="400" loading="lazy" decoding="async" class="project-image" />
+          <div class="project-body">
+            <div class="project-name">Blue DSP &mdash; iw2ndh-dsp (dsPIC33)</div>
+            <p class="project-desc"><span data-lang="en">DSP-based audio processing project using the Microchip dsPIC33 microcontroller.</span><span data-lang="it">Progetto di elaborazione audio DSP basato sul microcontrollore Microchip dsPIC33.</span><span data-lang="es">Proyecto de procesamiento de audio DSP basado en el microcontrolador Microchip dsPIC33.</span></p>
+            <a href="https://jackdev23.wixsite.com/iw2ndh-dsp" target="_blank" rel="noopener" class="project-link">&#8599; <span data-lang="en">Blue DSP Noise-Canceling DSP for Ham Radio</span><span data-lang="it">Blue DSP: DSP di cancellazione del rumore per radioamatori</span><span data-lang="es">Blue DSP: DSP de cancelación de ruido para radioafición</span> &#8594;</a>
+            <br /><small class="repo-note"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#git-branch"/></svg> <a href="https://github.com/jackdev23/Blue_DSP" target="_blank" rel="noopener">GitHub: Blue_DSP</a></small>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <img src="assets/encry.jpg" alt="Encry AES-256 voice encryption device - hardware kit for secure radio and phone communication" width="800" height="400" loading="lazy" decoding="async" class="project-image" />
+          <div class="project-body">
+            <div class="project-name">Encry &mdash; AES-256 Voice Encryption</div>
+            <p class="project-desc"><span data-lang="en">Hardware AES-256 voice encryption kit for radios and phones &mdash; no apps, no cloud, no stored recordings.</span><span data-lang="it">Kit hardware di cifratura vocale AES-256 per radio e telefoni &mdash; senza app, senza cloud, senza registrazioni archiviate.</span><span data-lang="es">Kit de cifrado de voz AES-256 por hardware para radios y tel&eacute;fonos &mdash; sin apps, sin nube, sin grabaciones almacenadas.</span></p>
+            <a href="http://encrypt-kit.surge.sh/" rel="noopener" class="project-link">&#8599; <span data-lang="en">Visit Project</span><span data-lang="it">Visita Progetto</span><span data-lang="es">Visitar Proyecto</span> &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-block fade-up">
+        <h3 class="cert-title"><span data-lang="en">Certifications</span><span data-lang="it">Certificazioni</span><span data-lang="es">Certificaciones</span></h3>
+        <p class="cert-text"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#search"/></svg> <span data-lang="en">Amateur Radio License since 1986 (Callsign: IW2NDH)</span><span data-lang="it">Licenza di Radioamatore dal 1986 (Call: IW2NDH)</span><span data-lang="es">Licencia de Radioaficionado desde 1986 (Indicativo: IW2NDH)</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIRE ME -->
+  <section id="hire" class="section" aria-label="Hire me - contact information">
+    <div class="container">
+      <h2 class="section-title fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#factory"/></svg> <span data-lang="en">How to Hire Me</span><span data-lang="it">Come Assumermi</span><span data-lang="es">Cómo Trabajar Conmigo</span></h2>
+      <p class="section-subtitle fade-up"><span data-lang="en">I'm available for firmware development, hardware design, and embedded systems consulting. Here's how we can work together.</span><span data-lang="it">Sono disponibile per sviluppo firmware, progettazione hardware e consulenza su sistemi embedded. Ecco come possiamo collaborare.</span><span data-lang="es">Estoy disponible para desarrollo de firmware, diseño de hardware y consultoría en sistemas embebidos. Así es como podemos trabajar juntos.</span></p>
+
+      <!-- Availability Banner -->
+      <div class="availability-banner fade-up">
+        <svg class="ic availability-emoji" aria-hidden="true"><use href="assets/icons.svg#sparkles"/></svg>
+        <div>
+          <strong class="availability-title"><span data-lang="en">Currently Available for Projects</span><span data-lang="it">Attualmente Disponibile per Progetti</span><span data-lang="es">Actualmente Disponible para Proyectos</span></strong>
+          <span class="availability-text"><span data-lang="en">Open to contract, freelance, and full-time opportunities in embedded systems &amp; firmware development.</span><span data-lang="it">Disponibile per contratti, lavoro freelance e posizioni full-time in sistemi embedded e sviluppo firmware.</span><span data-lang="es">Abierto a oportunidades por contrato, freelance y tiempo completo en sistemas embebidos y desarrollo de firmware.</span></span>
+        </div>
+      </div>
+
+      <!-- Engagement Types -->
+      <h3 class="subheading fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#map-pin"/></svg> <span data-lang="en">Ways to Work Together</span><span data-lang="it">Modalità di Collaborazione</span><span data-lang="es">Formas de Colaborar</span></h3>
+      <div class="exp-grid hire-grid">
+
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#rocket"/></svg> <span data-lang="en">Contract / Freelance</span><span data-lang="it">Contratto / Freelance</span><span data-lang="es">Contrato / Freelance</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">Short to mid-term projects: firmware development, hardware design reviews, protocol implementation (Modbus, SPI, I2C), DSP board bring-up. Typical engagement: 2&#8211;6 months.</span><span data-lang="it">Progetti a breve-medio termine: sviluppo firmware, revisioni progettazione hardware, implementazione protocolli (Modbus, SPI, I2C), messa in servizio schede DSP. Impegno tipico: 2&#8211;6 mesi.</span><span data-lang="es">Proyectos a corto y medio plazo: desarrollo de firmware, revisiones de diseño de hardware, implementación de protocolos (Modbus, SPI, I2C), puesta en servicio de tarjetas DSP. Compromiso típico: 2-6 meses.</span></p>
+        </div>
+
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#landmark"/></svg> <span data-lang="en">Consulting</span><span data-lang="it">Consulenza</span><span data-lang="es">Consultoría</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">Technical consulting for hardware startups: component selection, schematic review, firmware architecture advice, production readiness assessment. Hourly or daily rate.</span><span data-lang="it">Consulenza tecnica per startup hardware: selezione componenti, revisione schemi, consulenza architettura firmware, valutazione prontezza produttiva. Tariffa oraria o giornaliera.</span><span data-lang="es">Consultoría técnica para startups de hardware: selección de componentes, revisión de esquemas, asesoramiento sobre arquitectura de firmware, evaluación de preparación para producción. Tarifa por hora o diaria.</span></p>
+        </div>
+
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#building"/></svg> <span data-lang="en">Full-Time</span><span data-lang="it">Tempo Pieno</span><span data-lang="es">Tiempo Completo</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">Looking for a senior firmware engineer role. Based in Italy. Open to remote work and occasional on-site visits.</span><span data-lang="it">Cerco ruolo da ingegnere firmware senior. Basato in Italia. Disponibile per lavoro remoto e visite occasionali in sede.</span><span data-lang="es">Buscando un rol de ingeniero de firmware senior. Con base en Italia. Abierto a trabajo remoto y visitas ocasionales al sitio.</span></p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <h3 class="subheading subheading-center fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg> <span data-lang="en">Get in Touch</span><span data-lang="it">Contattami</span><span data-lang="es">Ponte en Contacto</span></h3>
+      <div class="contact-block fade-up">
+        <a href="mailto:jackdev23@gmail.com" class="btn contact-btn-primary"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg> <span data-lang="en">Send Me an Email</span><span data-lang="it">Inviatemi un'email</span><span data-lang="es">Envíame un correo</span></a>
+        <br /><br />
+        <a href="https://www.facebook.com/iw2ndhDSP/" target="_blank" rel="noopener" class="btn contact-btn-facebook"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#share-2"/></svg> <span data-lang="en">Facebook Page</span><span data-lang="it">Pagina Facebook</span><span data-lang="es">Página de Facebook</span></a>
+      </div>
+
+      <!-- What You Get -->
+      <h3 class="subheading subheading-spaced fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#lightbulb"/></svg> <span data-lang="en">What You Get</span><span data-lang="it">Cosa Offro</span><span data-lang="es">Lo Que Obtienes</span></h3>
+      <div class="exp-grid what-you-get-grid fade-up">
+
+        <div class="exp-card what-you-get-card">
+          <svg class="ic wyg-icon" aria-hidden="true"><use href="assets/icons.svg#hourglass"/></svg>
+          <div>
+            <strong class="wyg-title"><span data-lang="en">Production-Ready Code</span><span data-lang="it">Codice Pronto per la Produzione</span><span data-lang="es">Código Listo para Producción</span></strong>
+            <span class="wyg-text"><span data-lang="en">Bare-metal firmware that works on first flash. No frameworks, no bloat — just clean C code optimized for your hardware.</span><span data-lang="it">Firmware bare-metal che funziona al primo flash. Niente framework, niente bloat — solo codice C pulito ottimizzato per il vostro hardware.</span><span data-lang="es">Firmware bare-metal que funciona en el primer flasheo. Sin frameworks, sin sobrecarga — solo código C limpio optimizado para tu hardware.</span></span>
+          </div>
+        </div>
+
+        <div class="exp-card what-you-get-card">
+          <svg class="ic wyg-icon" aria-hidden="true"><use href="assets/icons.svg#wrench"/></svg>
+          <div>
+            <strong class="wyg-title"><span data-lang="en">Hardware to Software</span><span data-lang="it">Dall'Hardware al Software</span><span data-lang="es">De Hardware a Software</span></strong>
+            <span class="wyg-text"><span data-lang="en">Full lifecycle experience from schematic capture through PCB layout, component sourcing, firmware development, and production testing.</span><span data-lang="it">Esperienza completa del ciclo di vita dalla cattura dello schema al layout PCB, approvvigionamento componenti, sviluppo firmware e test di produzione.</span><span data-lang="es">Experiencia completa del ciclo de vida desde la captura del esquema hasta el layout PCB, adquisición de componentes, desarrollo de firmware y pruebas de producción.</span></span>
+          </div>
+        </div>
+
+        <div class="exp-card what-you-get-card">
+          <svg class="ic wyg-icon" aria-hidden="true"><use href="assets/icons.svg#bug"/></svg>
+          <div>
+            <strong class="wyg-title"><span data-lang="en">Debugging Expertise</span><span data-lang="it">Esperienza nel Debugging</span><span data-lang="es">Experiencia en Depuración</span></strong>
+            <span class="wyg-text"><span data-lang="en">25+ years of experience tracking down hardware and firmware bugs. Proficient with oscilloscopes, logic analyzers (Saleae), BusPirate, and JTAG.</span><span data-lang="it">Oltre 25 anni di esperienza nell'individuazione di bug hardware e firmware. Esperto con oscilloscopi, analizzatori logici (Saleae), BusPirate e JTAG.</span><span data-lang="es">Más de 25 años de experiencia rastreando errores de hardware y firmware. Experto en osciloscopios, analizadores lógicos (Saleae), BusPirate y JTAG.</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="resources" class="section section-gray" aria-label="Technical Resources">
+    <div class="container">
+      <h2 class="section-title fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#library"/></svg> <span data-lang="en">Resources</span><span data-lang="it">Risorse</span><span data-lang="es">Recursos</span></h2>
+      <p class="section-subtitle fade-up"><span data-lang="en">Open-source firmware projects and ports I maintain on GitHub.</span><span data-lang="it">Progetti firmware open-source e porting che mantengo su GitHub.</span><span data-lang="es">Proyectos de firmware de código abierto y ports que mantengo en GitHub.</span></p>
+
+      <div class="skills-grid">
+        <div class="resource-section fade-up">
+          <h3 class="section-title-small"><span data-lang="en">Firmware &amp; DSP</span><span data-lang="it">Firmware &amp; DSP</span><span data-lang="es">Firmware y DSP</span></h3>
+          <ul class="resource-list">
+            <li><a href="https://github.com/jackdev23/Blue_DSP" target="_blank" rel="noopener">Blue_DSP</a><span><span data-lang="en">DSP audio processing firmware in C for dsPIC33.</span><span data-lang="it">Firmware C per elaborazione audio DSP su dsPIC33.</span><span data-lang="es">Firmware C de procesamiento de audio DSP para dsPIC33.</span></span></li>
+            <li><a href="https://github.com/jackdev23/INDSP" target="_blank" rel="noopener">INDSP</a><span><span data-lang="en">Arduino library for the INDSP DSP board.</span><span data-lang="it">Libreria Arduino per la scheda DSP INDSP.</span><span data-lang="es">Librería Arduino para la placa DSP INDSP.</span></span></li>
+            <li><a href="https://github.com/jackdev23/morsedecode" target="_blank" rel="noopener">morsedecode</a><span><span data-lang="en">Morse code decoder in C.</span><span data-lang="it">Decodificatore di codice Morse in C.</span><span data-lang="es">Decodificador de código Morse en C.</span></span></li>
+          </ul>
+        </div>
+        <div class="resource-section fade-up">
+          <h3 class="section-title-small"><span data-lang="en">Amateur Radio &amp; Sensors</span><span data-lang="it">Radioamatoriale &amp; Sensori</span><span data-lang="es">Radioafición y Sensores</span></h3>
+          <ul class="resource-list">
+            <li><a href="https://github.com/jackdev23/iw2ndh_for_cats" target="_blank" rel="noopener">iw2ndh_for_cats</a><span><span data-lang="en">STM32 CAT interface for amateur radio (STM32CubeIDE project).</span><span data-lang="it">Interfaccia CAT per radioamatori su STM32 (progetto STM32CubeIDE).</span><span data-lang="es">Interfaz CAT para radioafición en STM32 (proyecto STM32CubeIDE).</span></span></li>
+            <li><a href="https://github.com/jackdev23/STM32_AS7341" target="_blank" rel="noopener">STM32_AS7341</a><span><span data-lang="en">Port of Adafruit's AS7341 color sensor driver to STM32.</span><span data-lang="it">Porting del driver del sensore di colore AS7341 di Adafruit per STM32.</span><span data-lang="es">Port del controlador del sensor de color AS7341 de Adafruit a STM32.</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community" class="section section-gray" aria-label="Community & Forum Presence">
+    <div class="container">
+      <h2 class="section-title fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#users"/></svg> <span data-lang="en">Community</span><span data-lang="it">Comunità</span><span data-lang="es">Comunidad</span></h2>
+      <p class="section-subtitle fade-up"><span data-lang="en">Engaged in embedded systems communities and forums.</span><span data-lang="it">Partecipo ai forum e alle community di sviluppo embedded.</span><span data-lang="es">Participa en foros y comunidades de desarrollo embebido.</span></p>
+      
+      <div class="exp-grid community-grid">
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#target"/></svg> <span data-lang="en">Microchip Forum Profile</span><span data-lang="it">Profilo Forum Microchip</span><span data-lang="es">Perfil del Foro Microchip</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">Active participant in dsPIC33, PIC24, and embedded firmware discussions. Share your questions or explore my discussion topics.</span><span data-lang="it">Partecipe attivamente a discussioni su dsPIC33, PIC24 e firmware embedded. Condividi le tue domande o esplora i miei argomenti di discussione.</span><span data-lang="es">Participa activamente en discusiones sobre dsPIC33, PIC24 y firmware embebido. Comparte tus preguntas o explora mis temas de discusión.</span></p>
+          <div class="tech-tags tags-mt">
+            <a href="https://forum.microchip.com/s/user-profile?&page=1&offset=0&selectedTab=discussionTopics" target="_blank" rel="noopener" class="tag tag-cta"><span data-lang="en">View Discussion Topics</span><span data-lang="it">Visualizza Argomenti</span><span data-lang="es">Ver Temas de Discusión</span></a>
+          </div>
+        </div>
+        
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#code"/></svg> <span data-lang="en">GitHub Contributions</span><span data-lang="it">Contributi GitHub</span><span data-lang="es">Contribuciones de GitHub</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">Check out my repositories for embedded projects, code examples, and technical documentation.</span><span data-lang="it">Dai un'occhiata ai miei repository per progetti embedded, esempi di codice e documentazione tecnica.</span><span data-lang="es">Explora mis repositorios para proyectos embedded, ejemplos de código y documentación técnica.</span></p>
+          <div class="tech-tags tags-mt">
+            <a href="https://github.com/jackdev23" target="_blank" rel="noopener" class="tag tag-github"><span data-lang="en">Visit GitHub Profile</span><span data-lang="it">Visita Profilo GitHub</span><span data-lang="es">Visitar Perfil de GitHub</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMBEDDED AI -->
+  <section id="embedded-ai" class="section" aria-label="Embedded AI - AI-Assisted Firmware Development">
+    <div class="container">
+      <h2 class="section-title fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#bot"/></svg> <span data-lang="en">Embedded AI &amp; AI-Assisted Development</span><span data-lang="it">Embedded AI e Sviluppo Assistito dall'AI</span><span data-lang="es">Embedded AI y Desarrollo Asistido por IA</span></h2>
+      <p class="section-subtitle fade-up"><span data-lang="en">I integrate hardware-aware AI tooling into my firmware workflow to speed up bring-up, debugging, and testing — with every result verified on real silicon.</span><span data-lang="it">Integro strumenti AI hardware-aware nel mio workflow firmware per accelerare bring-up, debugging e test — con ogni risultato verificato su silicio reale.</span><span data-lang="es">Integro herramientas de IA consciente del hardware en mi flujo de trabajo de firmware para acelerar bring-up, depuración y pruebas — con cada resultado verificado en silicio real.</span></p>
+
+      <div class="exp-grid community-grid">
+        <div class="exp-card fade-up">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role"><img class="emb-icon" src="assets/embedder-icon.svg" alt="" width="20" height="20"> <span data-lang="en">Embedder — Hardware-Aware AI for Embedded Software</span><span data-lang="it">Embedder — AI hardware-aware per software embedded</span><span data-lang="es">Embedder — IA consciente del hardware para software embebido</span></div>
+              <div class="exp-company"><a href="https://embedder.com/" target="_blank" rel="noopener">embedder.com</a></div>
+            </div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">I use Embedder in my firmware workflow: datasheet-grounded driver generation with cited register values, schematic-aware pin muxing, and closed-loop build-flash-test validation on real boards. It drives the bench instruments I already own — serial, GDB, logic analyzer, oscilloscope — and attaches hardware evidence to every conclusion. The AI accelerates the mechanical work; my 25 years of bare-metal experience verify the result on silicon.</span><span data-lang="it">Uso Embedder nel mio workflow firmware: generazione di driver basata sui datasheet con valori di registro citati, pin muxing consapevole dello schema e validazione closed-loop build-flash-test su schede reali. Utilizza la strumentazione di banco che possiedo già — seriale, GDB, analizzatore logico, oscilloscopio — e allega evidenze hardware a ogni conclusione. L'AI accelera il lavoro meccanico; i miei 25 anni di esperienza bare-metal verificano il risultato su silicio.</span><span data-lang="es">Uso Embedder en mi flujo de trabajo de firmware: generación de drivers basada en datasheets con valores de registro citados, pin muxing consciente del esquema y validación en ciclo cerrado compilar-flashear-probar en placas reales. Utiliza el equipo de banco que ya poseo — serie, GDB, analizador lógico, osciloscopio — y adjunta evidencia de hardware a cada conclusión. La IA acelera el trabajo mecánico; mis 25 años de experiencia bare-metal verifican el resultado en silicio.</span></p>
+          <div class="tech-tags tags-mt">
+            <span class="tag">VS Code</span><span class="tag">C</span><span class="tag">Bare Metal</span><span class="tag">HIL Testing</span><span class="tag">GDB</span><span class="tag">Saleae</span><span class="tag">Oscilloscope</span>
+          </div>
+          <div class="tech-tags tags-mt">
+            <a href="https://embedder.com/" target="_blank" rel="noopener" class="tag tag-cta"><span data-lang="en">Visit Embedder</span><span data-lang="it">Visita Embedder</span><span data-lang="es">Visita Embedder</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL DISCUSSION: FPGA vs CLC -->
+  <section id="fpga-clc" class="section section-gray" aria-label="Technical Discussion - FPGA Replacement with CLC">
+    <div class="container">
+      <h2 class="section-title fade-up"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#wrench"/></svg> <span data-lang="en">FPGA vs CLC: When to Replace Programmable Logic</span><span data-lang="it">FPGA vs CLC: Quando Sostituire la Logica Programmabile</span><span data-lang="es">FPGA vs CLC: Cuándo Reemplazar la Lógica Programable</span></h2>
+      <p class="section-subtitle fade-up"><span data-lang="en">Technical analysis of Microchip's Configurable Logic Block (CLC) as a cost-effective FPGA alternative for embedded systems.</span><span data-lang="it">Analisi tecnica del Configurable Logic Block (CLC) di Microchip come alternativa a costo contenuto all'FPGA per sistemi embedded.</span><span data-lang="es">Análisis técnico del Configurable Logic Block (CLC) de Microchip como alternativa de bajo costo al FPGA para sistemas embebidos.</span></p>
+
+      <div class="exp-grid">
+        <!-- What is CLC -->
+        <div class="exp-card fade-up clc-card">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#settings"/></svg> <span data-lang="en">What is Configurable Logic Block (CLC)?</span><span data-lang="it">Che Cos'è il Configurable Logic Block (CLC)?</span><span data-lang="es">¿Qué es el Configurable Logic Block (CLC)?</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">The CLC is a hardware peripheral available in many PIC® 8-bit and 16-bit microcontrollers. It provides up to 7 independent logic blocks that can be configured as combinational or sequential logic, effectively implementing custom digital logic without external components.</span><span data-lang="it">Il CLC è un periferico hardware disponibile in molti microcontrollori PIC® 8-bit e 16-bit. Fornisce fino a 7 blocchi di logica indipendenti che possono essere configurati come logica combinazionale o sequenziale, implementando efficacemente logica digitale personalizzata senza componenti esterni.</span><span data-lang="es">El CLC es un periférico hardware disponible en muchos microcontroladores PIC® de 8-bit y 16-bit. Proporciona hasta 7 bloques de lógica independientes que pueden configurarse como lógica combinacional o secuencial, implementando lógica digital personalizada sin componentes externos.</span></p>
+          <div class="tech-tags tags-mt">
+            <span class="tag">PIC® MCUs</span><span class="tag">Digital Logic</span><span class="tag">No External Parts</span><span class="tag">Hardware Peripheral</span>
+          </div>
+        </div>
+
+        <!-- Why Replace FPGA -->
+        <div class="exp-card fade-up clc-card">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#check"/></svg> <span data-lang="en">Why Consider CLC Over FPGA?</span><span data-lang="it">Perché Considerare il CLC invece dell'FPGA?</span><span data-lang="es">¿Por qué Considerar el CLC sobre el FPGA?</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">For many embedded applications, the flexibility and cost of an integrated CLC solution outweighs the benefits of a separate FPGA device. The key factors:</span><span data-lang="it">Per molte applicazioni embedded, la flessibilità e il costo di una soluzione CLC integrata superano i benefici di un dispositivo FPGA separato. I fattori chiave:</span><span data-lang="es">Para muchas aplicaciones embebidas, la flexibilidad y el costo de una solución CLC integrada superan los beneficios de un dispositivo FPGA separado. Los factores clave:</span></p>
+          <ul class="feature-list">
+            <li><strong data-lang="en">Reduced BOM Cost</strong><span data-lang="it">Costo Componenti Ridotto</span><span data-lang="es">Menor Costo de Componentes</span></li>
+            <li><strong data-lang="en">Single Package Solution</strong><span data-lang="it">Soluzione in Unico Pacchetto</span><span data-lang="es">Solución en un Solo Paquete</span></li>
+            <li><strong data-lang="en">Lower Power Consumption</strong><span data-lang="it">Consumo Energetico Ridotto</span><span data-lang="es">Menor Consumo de Energía</span></li>
+            <li><strong data-lang="en">Simplified Design Process</strong><span data-lang="it">Processo di Progettazione Semplificato</span><span data-lang="es">Proceso de Diseño Simplificado</span></li>
+            <li><strong data-lang="en">Faster Time-to-Market</strong><span data-lang="it">Tempo di Mercato Ridotto</span><span data-lang="es">Menor Tiempo al Mercado</span></li>
+          </ul>
+        </div>
+
+        <!-- Technical Comparison -->
+        <div class="exp-card fade-up clc-card">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#bar-chart-3"/></svg> <span data-lang="en">Technical Trade-offs</span><span data-lang="it">Trade-off Tecnici</span><span data-lang="es">Sacrificios Técnicos</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">CLC is ideal for glue logic, timing control, and simple state machines. However, it has limitations compared to FPGA:</span><span data-lang="it">Il CLC è ideale per glue logic, controllo di timing e macchine a stati semplici. Tuttavia presenta limitazioni rispetto a un FPGA:</span><span data-lang="es">El CLC es ideal para lógica de unión (glue logic), control de temporización y máquinas de estados simples. Sin embargo, presenta limitaciones frente a un FPGA:</span></p>
+          <ul class="feature-list">
+            <li><strong data-lang="en">Logic Depth &amp; Complexity</strong><span data-lang="it">Profondità e Complessità della Logica</span><span data-lang="es">Profundidad y Complejidad de la Lógica</span></li>
+            <li><strong data-lang="en">Clock Domains &amp; Timing</strong><span data-lang="it">Domini di Clock e Timing</span><span data-lang="es">Dominios de Reloj y Temporalización</span></li>
+            <li><strong data-lang="en">Memory Resources</strong><span data-lang="it">Risorse di Memoria</span><span data-lang="es">Recursos de Memoria</span></li>
+            <li><strong data-lang="en">IO Count &amp; Voltage Levels</strong><span data-lang="it">Numero IO e Livelli di Tensione</span><span data-lang="es">Cantidad de IO y Niveles de Voltaje</span></li>
+          </ul>
+        </div>
+
+        <!-- When to Use CLC -->
+        <div class="exp-card fade-up clc-card">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#target"/></svg> <span data-lang="en">When to Choose CLC Over FPGA</span><span data-lang="it">Quando Scegliere il CLC invece dell'FPGA</span><span data-lang="es">Cuándo Elegir el CLC sobre el FPGA</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">CLC is the right choice when you need:</span><span data-lang="it">Il CLC è la scelta giusta quando hai bisogno di:</span><span data-lang="es">El CLC es la elección correcta cuando necesitas:</span></p>
+          <ul class="feature-list">
+            <li><strong data-lang="en">Simple combinational logic</strong><span data-lang="it">Logica combinazionale semplice</span><span data-lang="es">Lógica combinacional simple</span></li>
+            <li><strong data-lang="en">Basic state machines (≤4 states)</strong><span data-lang="it">Macchine di stato base (≤4 stati)</span><span data-lang="es">Máquinas de estados básicas (≤4 estados)</span></li>
+            <li><strong data-lang="en">Signal timing &amp; synchronization</strong><span data-lang="it">Timing e sincronizzazione segnali</span><span data-lang="es">Temporalización y sincronización de señales</span></li>
+            <li><strong data-lang="en">Low-pin-count applications</strong><span data-lang="it">Applicazioni a basso numero di pin</span><span data-lang="es">Aplicaciones de bajo número de pines</span></li>
+            <li><strong data-lang="en">Cost-sensitive designs</strong><span data-lang="it">Progetti a costo sensibile</span><span data-lang="es">Diseños sensibles al costo</span></li>
+          </ul>
+        </div>
+
+        <!-- When to Use FPGA -->
+        <div class="exp-card fade-up clc-card">
+          <div class="exp-header">
+            <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#flask-conical"/></svg> <span data-lang="en">When FPGA is Still Needed</span><span data-lang="it">Quando Serve Ancora l'FPGA</span><span data-lang="es">Cuándo aún se Necesita el FPGA</span></div>
+          </div>
+          <p class="exp-desc"><span data-lang="en">Keep the FPGA for complex applications requiring:</span><span data-lang="it">Mantieni l'FPGA per applicazioni complesse che richiedono:</span><span data-lang="es">Mantén el FPGA para aplicaciones complejas que requieren:</span></p>
+          <ul class="feature-list">
+            <li><strong data-lang="en">High-speed parallel processing</strong><span data-lang="it">Elaborazione parallela ad alta velocità</span><span data-lang="es">Procesamiento paralelo de alta velocidad</span></li>
+            <li><strong data-lang="en">Large state machines</strong><span data-lang="it">Macchine di stato complesse</span><span data-lang="es">Máquinas de estados grandes</span></li>
+            <li><strong data-lang="en">On-chip memory (BRAM/URAM)</strong><span data-lang="it">Memoria on-chip</span><span data-lang="es">Memoria en chip</span></li>
+            <li><strong data-lang="en">Hard processor cores (ARM, RISC-V)</strong><span data-lang="it">Processori hard core</span><span data-lang="es">Núcleos de procesador hardware</span></li>
+            <li><strong data-lang="en">Complex DSP algorithms</strong><span data-lang="it">Algoritmi DSP complessi</span><span data-lang="es">Algoritmos DSP complejos</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- References -->
+      <div class="exp-card fade-up ref-card">
+        <div class="exp-header">
+          <div class="exp-role"><svg class="ic" aria-hidden="true"><use href="assets/icons.svg#library"/></svg> <span data-lang="en">Further Reading</span><span data-lang="it">Approfondimenti</span><span data-lang="es">Lecturas Adicionales</span></div>
+        </div>
+        <p class="exp-desc"><span data-lang="en">For detailed technical specifications and configuration tools, refer to Microchip's official documentation:</span><span data-lang="it">Per specifiche tecniche dettagliate e strumenti di configurazione, consulta la documentazione ufficiale di Microchip:</span><span data-lang="es">Para especificaciones técnicas detalladas y herramientas de configuración, consulta la documentación oficial de Microchip:</span></p>
+        <div class="tech-tags tags-mt">
+          <a href="https://www.microchip.com/en-us/products/microcontrollers/8-bit-mcus/peripherals/system-flexibility/custom-logic" target="_blank" rel="noopener" class="tag tag-cta"><span data-lang="en">Microchip Custom Logic Documentation</span><span data-lang="it">Documentazione Microchip Custom Logic</span><span data-lang="es">Documentación Microchip Custom Logic</span></a>
+          <br /><br />
+          <a href="https://www.microchip.com/en-us/products/microcontrollers/8-bit-mcus/peripherals/system-flexibility/custom-logic" target="_blank" rel="noopener" class="tag tag-cta"><span data-lang="en">CLC Configuration Guide</span><span data-lang="it">Guida alla Configurazione CLC</span><span data-lang="es">Guía de Configuración CLC</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img class="footer-mark" src="assets/mark.svg" alt="" width="32" height="32">
+    <p><span data-lang="en">Built with care</span><span data-lang="it">Realizzato con cura</span><span data-lang="es">Hecho con cuidado</span> &#8212; Luca Facchinetti</p>
+    <p>&middot; <span data-lang="en">Italy</span><span data-lang="it">Italia</span><span data-lang="es">Italia</span> &middot; <span data-lang="en">Available for projects</span><span data-lang="it">Disponibile per progetti</span><span data-lang="es">Disponible para proyectos</span></p>
+    <p class="visitor-count" id="visitor-count" hidden>
+      <svg class="ic" aria-hidden="true"><use href="assets/icons.svg#users"/></svg>
+      <span class="mono" id="visitor-count-num">&mdash;</span>
+      <span data-lang="en">visitors</span><span data-lang="it">visitatori</span><span data-lang="es">visitantes</span>
+    </p>
+    <p><span data-lang="en">Projects:</span><span data-lang="it">Progetti:</span><span data-lang="es">Proyectos:</span> <a href="https://jackdev23.wixsite.com/iw2ndh-dsp" target="_blank" rel="noopener">Blue DSP &mdash; Noise-Canceling DSP for Ham Radio</a> &middot; <a href="https://jackdev23.wixsite.com/panadapter" target="_blank" rel="noopener">STM32 Panadapter SDR</a> &middot; <a href="http://encrypt-kit.surge.sh/" target="_blank" rel="noopener">Encry AES-256</a> &middot; <a href="https://github.com/jackdev23" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+
+  <!-- JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#243645"/>
+    <stop offset="1" stop-color="#1B2321"/>
+  </linearGradient>
+  <pattern id="stripes" patternUnits="userSpaceOnUse" width="200" height="28">
+    <rect width="200" height="28" fill="#556561"/>
+    <rect y="4" width="200" height="8" fill="#97A7A0"/>
+    <rect y="16" width="200" height="6" fill="#778B86"/>
+  </pattern>
+  <pattern id="windows" patternUnits="userSpaceOnUse" width="16" height="16">
+    <rect x="3" y="3" width="7" height="7" fill="#DDE4DE"/>
+  </pattern>
+  <clipPath id="tile"><rect width="200" height="200" rx="16"/></clipPath>
+  <clipPath id="fclip"><path d="M60 40H145V65H85V88H130V113H85V160H60Z"/></clipPath>
+  <filter id="drop" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000000" flood-opacity=".45"/>
+  </filter>
+</defs>
+<rect width="200" height="200" rx="16" fill="url(#bg)"/>
+<g clip-path="url(#tile)">
+  <path d="M-20 150L220 10" stroke="#3A4A47" stroke-width="16"/>
+  <path d="M-20 168L220 28" stroke="#DDE4DE" stroke-width="3" opacity=".45"/>
+  <path d="M-20 132L220 -8" stroke="#DDE4DE" stroke-width="2" opacity=".25"/>
+</g>
+<g filter="url(#drop)">
+  <path d="M60 40H145V65H85V88H130V113H85V160H60Z" fill="url(#stripes)"/>
+  <g clip-path="url(#fclip)" opacity=".75">
+    <rect x="56" y="36" width="94" height="128" fill="url(#windows)"/>
+  </g>
+  <path d="M60 40H145V65H85V88H130V113H85V160H60Z" fill="none" stroke="rgba(221,228,222,.4)" stroke-width="2"/>
+</g>
+<rect x="150" y="40" width="10" height="10" fill="#DDE4DE"/>
+<rect x="150" y="113" width="10" height="10" fill="#DDE4DE"/>
+<rect x="44" y="160" width="10" height="10" fill="#97A7A0"/>
+<rect x="1" y="1" width="198" height="198" rx="15" fill="none" stroke="rgba(221,228,222,.18)" stroke-width="2"/>
+</svg>
